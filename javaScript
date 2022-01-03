@@ -1,0 +1,11 @@
+const meuCabecalho = document.querySelector("h1");
+meuCabecalho.textContent = "Ola mundo";
+let minhaImagen = document.querySelector("img");
+minhaImagen.onclick = function () {
+  let meuSrc = minhaImagen.getAttribute("src");
+  if (meuSrc === "https://mdn.github.io/beginner-html-site/images/firefox-icon.png" ) {
+    minhaImagen.setAttribute("src", "https://image.apktoy.com/img/4f/org.mozilla.fennec_aurora/icon.png" );
+  } else {
+    minhaImagen.setAttribute( "src","https://mdn.github.io/beginner-html-site/images/firefox-icon.png" );
+  }
+};
